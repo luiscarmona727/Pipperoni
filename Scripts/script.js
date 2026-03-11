@@ -4,14 +4,14 @@ const seccionsInformacio = document.querySelectorAll(".sobreNosaltres section");
 const imatges = document.querySelectorAll("#galeria img"); //Imatges de la galeria
 const lightbox = document.getElementById("lightbox"); //Div per posar imatge gran
 const pizzes = [ //Array que guarda les pizzes grans
-  { src: "/Recursos/Imatges/pizza1big.avif", alt: "margheritaGran" },
-  { src: "/Recursos/Imatges/pizza2big.avif", alt: "cappriciosaGran" },
-  { src: "/Recursos/Imatges/pizza3big.avif", alt: "prosciuttoEFunghiGran" },
-  { src: "/Recursos/Imatges/pizza4big.avif", alt: "diavolaGran" },
-  { src: "/Recursos/Imatges/pizza5big.avif", alt: "napoliGran" },
-  { src: "/Recursos/Imatges/pizza6big.avif", alt: "budfalinaGran" },
-  { src: "/Recursos/Imatges/pizza7big.avif", alt: "ibericaGran" },
-  { src: "/Recursos/Imatges/pizza8big.avif", alt: "vegetarianaGran" }
+  { src: "/Pipperoni/Recursos/Imatges/pizza1big.avif", alt: "margheritaGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza2big.avif", alt: "cappriciosaGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza3big.avif", alt: "prosciuttoEFunghiGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza4big.avif", alt: "diavolaGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza5big.avif", alt: "napoliGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza6big.avif", alt: "budfalinaGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza7big.avif", alt: "ibericaGran" },
+  { src: "/Pipperoni/Recursos/Imatges/pizza8big.avif", alt: "vegetarianaGran" }
 ];
 const hamburgers = document.querySelectorAll(".navHamburger");
 const navOverlay = document.querySelector(".navOverlay");
