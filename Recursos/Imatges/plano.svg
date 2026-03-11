@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" preserveAspectRatio="xMidYMid meet">
+  <!-- Taules quadrades (3 persones) -->
+  <rect class="taulaQuadrada mesa2" id="mesa2_1" x="25" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_2" x="125" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_3" x="225" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_4" x="325" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_5" x="425" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_6" x="525" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_7" x="625" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_8" x="725" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_9" x="825" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaQuadrada mesa2" id="mesa2_10" x="925" y="50" width="60" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+
+  <!-- Taules rodones (5 persones) -->
+  <circle class="taulaRodona mesa4" id="mesa4_1" cx="125" cy="250" r="40" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <circle class="taulaRodona mesa4" id="mesa4_2" cx="375" cy="250" r="40" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <circle class="taulaRodona mesa4" id="mesa4_3" cx="625" cy="250" r="40" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <circle class="taulaRodona mesa4" id="mesa4_4" cx="875" cy="250" r="40" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+
+  <!-- Taules rectangulars (8 persones) -->
+  <rect class="taulaRectangular mesa6" id="mesa6_1" x="75" y="400" width="120" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaRectangular mesa6" id="mesa6_2" x="225" y="400" width="120" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaRectangular mesa6" id="mesa6_3" x="375" y="400" width="120" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaRectangular mesa6" id="mesa6_4" x="525" y="400" width="120" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaRectangular mesa6" id="mesa6_5" x="675" y="400" width="120" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+  <rect class="taulaRectangular mesa6" id="mesa6_6" x="825" y="400" width="120" height="60" fill="#f2e8cf" stroke="black" stroke-width="3"/>
+</svg>

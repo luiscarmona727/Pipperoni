@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ca" id="Reserves">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Pipperoni - Reserves</title>
+    <link rel="stylesheet" href="/Estils/estil.css" />
+    <link rel="icon" href="/Recursos/Imatges/Pipperoni_logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navOverlay">
+      <div class="navLinks">
+        <span class="botoX">&#x2715</span>
+        <a href="/Pagines/Inici.html"> INICI </a>
+        <a href="/Pagines/Carta.html"> LA CARTA </a>
+        <a href="/Pagines/Reserves.html">
+          <strong> RESERVAR </strong>
+        </a>
+      </div>
+    </div>
+    <div class="fondoReserva">
+      <img src="/Recursos/Imatges/marbre.jpeg" alt="marbreFondo" />
+    </div>
+    <header class="headerReserva">
+      <a href="/Pagines/Inici.html">
+        <img
+          class="logoReserva"
+          src="/Recursos/Imatges/Pipperoni_logo.svg"
+          alt="Logo"
+        />
+      </a>
+      <div class="titolReserves">
+        <h1>FES LA TEVA RESERVA</h1>
+      </div>
+      <nav class="navegador2">
+        <!--Al final he decidit fer un inline SVG per fer el hamburger menu ja que l'anterior em presentava problemes.-->
+        <div class="navHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="botoTornar">&#x21B5</span>
+      </nav>
+    </header>
+    <main class="mainReserves">
+      <form class="formulariGrups" action="/reserva-grup" method="post">
+        <h2>RESERVA</h2>
+
+        <div class="camp">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" />
+          <div class="error" id="error-nom"></div>
+        </div>
+
+        <div class="camp">
+          <label for="cognom">Cognom</label>
+          <input type="text" id="cognom" name="cognom" />
+          <div class="error" id="error-cognom"></div>
+        </div>
+
+        <div class="camp">
+          <label for="persones">Nº Persones</label>
+          <select id="persones" name="persones">
+            <option value="" disabled selected>Selecciona</option>
+            <option class="max3">1</option>
+            <option class="max3">2</option>
+            <option class="max3">3</option>
+            <option class="max5">4</option>
+            <option class="max5">5</option>
+            <option class="max8">6</option>
+            <option class="max8">7</option>
+            <option class="max8">8</option>
+            <option class="max14">9</option>
+            <option class="max14">10</option>
+            <option class="max14">11</option>
+            <option class="max14">12</option>
+            <option class="max14">13</option>
+            <option class="max14">14</option>
+          </select>
+          <div class="error" id="error-persones"></div>
+        </div>
+
+        <div class="camp">
+          <label for="email">Email</label>
+          <input id="email" name="email" />
+          <div class="error" id="error-email"></div>
+        </div>
+
+        <div class="camp">
+          <label for="telefon">Telefon</label>
+          <input id="telefon" name="telefon" />
+          <div class="error" id="error-telefon"></div>
+        </div>
+
+        <div class="camp">
+          <label for="hora">Hora</label>
+          <select id="hora" name="hora">
+            <option value="" disabled selected>Selecciona</option>
+            <option>12:00</option>
+            <option>12:30</option>
+            <option>13:00</option>
+            <option>13:30</option>
+            <option>14:00</option>
+            <option>14:30</option>
+            <option>15:00</option>
+            <option>20:00</option>
+            <option>20:30</option>
+            <option>21:00</option>
+            <option>21:30</option>
+            <option>22:00</option>
+          </select>
+          <div class="error" id="error-hora"></div>
+        </div>
+
+        <div class="camp">
+          <label for="calendari">Data</label>
+          <input type="date" id="calendari" name="calendari" />
+          <div class="error" id="error-calendari"></div>
+        </div>
+
+        <button type="submit" class="botoEnviar">Envia</button>
+      </form>
+      <h2 id="escullTaula">ESCULL LA TEVA TAULA </h2>
+      <div class="planolRestaurant">
+        <object
+          id="planolRestaurant"
+          type="image/svg+xml"
+          data="/Recursos/Imatges/plano.svg"
+          width="1000"
+          height="300"
+        ></object>
+      </div>
+    </main>
+    <footer class="footerInici">
+      <p>© 2025 Pipperoni. Tots els drets reservats</p>
+    </footer>
+    <script src="/Scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,647 @@
+/*PAGINA PRINCIPAL*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
+  }
+}
+body {
+  background-color: #f2e8cf;
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+h1,
+h2,
+h3,
+a {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: none;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+h2,
+h3 {
+  font-size: 2rem;
+}
+.sobreNosaltres h3,
+.horariContacteUbicacio h3,
+.titolCarta,
+.titolReserves,
+#laCartaTitol {
+  text-decoration: underline;
+  text-decoration-color: #c9a227;
+  text-decoration-thickness: 2px;
+}
+p,
+span {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: none;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+  color: #2e2c26;
+}
+nav a {
+  font-size: 1.6rem;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.video-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 232, 207, 0.4);
+}
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.linkLogo {
+  background-color: #f2e8cf;
+  border-radius: 20px;
+  border: 1px solid #c9a227;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+header img {
+  width: 15rem;
+}
+.index,
+.titolInici {
+  gap: 1.5rem;
+  background: rgba(242, 232, 207, 0.85);
+  border-radius: 20px;
+  border: 1px solid #c9a227;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(6px);
+  margin: 0rem;
+}
+.navegador {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  background-color: #f2e8cf;
+  border-radius: 20px;
+  border: 1px solid #c9a227;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.navegador2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+.navHamburger {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navHamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.navOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9); 
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+.navOverlay.actiu {
+  display: flex;
+  opacity: 1;
+}
+.navOverlay .navLinks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px, solid, white;
+  border-radius: 5px;
+  margin-top: 15rem;
+}
+.navOverlay .navLinks a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 2rem;
+}
+.navOverlay .navLinks a:hover {
+  color: #c9a227;
+  transition: all 0.3s ease;
+}
+.botoX {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.botoX:hover{
+  color:#c9a227;
+}
+.botoTornar {
+  font-size: 3rem;
+  padding-left: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.botoTornar:hover{
+  color:#c9a227;
+  transition: all 0.3s ease;
+}
+.titolInici {
+  align-self: center;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+.index {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+nav a:hover,
+.sobreNosaltres a:hover {
+  color: #8b2e2e;
+  text-decoration: underline;
+  text-decoration-color: #c9a227;
+  text-decoration-thickness: 2px;
+}
+article h2 {
+  display: flex;
+  justify-content: center;
+}
+.mainInici h2 {
+  background-color: #f2e8cf;
+  border-radius: 12px;
+  border: 1px solid #c9a227;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(6px);
+}
+.sobreNosaltres {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.sobreNosaltres p {
+  text-align: justify;
+}
+.sobreNosaltres section {
+  width: 100%;
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 1vw;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+  border: 1px solid #c9a227;
+}
+.laMassa p,
+.elRestaurant p,
+.laMassa h3,
+.elRestaurant h3 {
+  color: #f2e8cf;
+}
+.laMassa {
+  background-color: #5a7d4f;
+}
+.elsIngredients {
+  background-color: #f2e8cf;
+  align-self: flex-end;
+}
+.elRestaurant {
+  background-color: #8b2e2e;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f2e8cf;
+  background: rgba(242, 232, 207, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid #c9a227;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.galeria img {
+  width: 30rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+.lightbox{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.7);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+.lightbox img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+.fletxa{
+  position:absolute;
+  top:50%;
+  font-size:6rem;
+  color:#f2e8cf;
+  cursor:pointer;
+  user-select: none;
+}
+.esquerra{
+  left:40px;
+}
+.dreta{
+  right:40px;
+}
+.horariContacteUbicacio {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#titolArticle2 {
+  text-align: center;
+}
+.horari,
+.contacte,
+.ubicacio {
+  width: 20rem;
+  padding: 1vw;
+  margin: 1vw;
+  list-style: none;
+  border: 1px solid #c9a227;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+  background-color: #f2e8cf;
+}
+.ubicacio {
+  width: 30rem;
+}
+.horari ul,
+.contacte ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+}
+.horariContacteUbicacio h3,
+.horariContacteUbicacio p {
+  display: flex;
+  justify-content: center;
+}
+.horari li,
+.contacte li {
+  display: flex;
+  justify-content: space-between;
+}
+.footerInici {
+  background-color: #f2e8cf;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 1);
+  border-top: 2px solid #c9a227;
+  z-index: 1;
+  font-size: 1.3rem;
+}
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*CARTA i RESERVES, Estil minimalista*/
+.headerCarta,
+.headerReserva {
+  background-color: #fffdf6;
+  border: 1px solid #c9a227;
+  z-index: 150;
+  position: relative;
+}
+.titolInici,
+.titolCarta,
+.titolReserves {
+  align-self: center;
+
+}
+.separadorSeccions {
+  height: 2px;
+  background-color: #c9a227;
+  border: none;
+  width: 95vw;
+}
+.mainCarta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.indexCarta {
+  margin: 2vw;
+}
+.indexCarta a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+#laCartaTitol {
+  font-size: 2rem;
+}
+.laCarta h3 {
+  display: flex;
+  justify-content: center;
+}
+.laCarta ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+.laCarta li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20rem;
+  cursor: pointer;
+}
+.laCarta li,
+.indexCarta {
+  background-color: #f2e8cf;
+  border: 1px solid #c9a227;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 20rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.preuAfegit{
+  background-color: #5a7d4f !important;
+}
+.selected{
+  color: #c9a227;
+}
+.nomIPreu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c9a227;
+  margin-bottom: 0.5rem;
+}
+.nomPlat {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.preuPlat {
+  font-size: 1.3rem;
+  color: #8b2e2e;
+}
+#piechart{
+  display: none;
+  border: 3px solid #c9a227;
+  border-radius: 20px;
+}
+/* RESERVAR */
+
+.botons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titolBoto {
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 400;
+  z-index: 2;
+}
+.botons a {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  padding: 1.5rem;
+  margin: 1vw;
+  margin-top: 10vh;
+  border: 1px solid #c9a227;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+  background-color: #f2e8cf;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.botoReservar::after,
+.botoReservarGrups::after {
+  content: "";
+  background: #8b2e2e;
+  position: absolute;
+  z-index: 1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.botoReservarGrups::after {
+  background: #5a7d4f;
+}
+.botons a:hover::after {
+  transform: skewX(45deg) scale(1, 1);
+}
+
+/* PAGINES FORMULARIS */
+.mainReserves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh;
+  background-color: #f2e8cf;
+}
+.formulariGrups {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  background-color: #fffdf6;
+  border: 1px solid #c9a227;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  font-family: "Cormorant Garamond", serif;
+  z-index: 0;
+}
+.formulariGrups h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+.camp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.camp label {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2e2c26;
+}
+.camp input,
+.camp select {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #c9a227;
+  background-color: #fdfbf5;
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.camp input:focus,
+.camp select:focus {
+  outline: none;
+  border-color: #8b2e2e;
+  box-shadow: 0 0 5px rgba(139, 46, 46, 0.3);
+}
+.botoEnviar {
+  background-color: #8b2e2e;
+  color: #f2e8cf;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 10px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  width: 60%;
+}
+.botoEnviar:hover {
+  background-color: #5a7d4f;
+  transform: scale(1.05);
+}
+.fondoReserva,
+.fondoCarta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+.fondoCarta {
+  z-index: -1;
+}
+.fondoReserva img,
+.fondoCarta img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fondoReserva::after,
+.fondoCarta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 232, 207, 0.4);
+  backdrop-filter: blur(6px);
+}
+.planolRestaurant,
+#escullTaula {
+  z-index: 2;
+  border: 2px solid #c9a227;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #fffdf6;
+}
+#escullTaula {
+  padding: 1rem;
+  text-align: center;
+}
+.planolRestaurant {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.planolRestaurant object {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}

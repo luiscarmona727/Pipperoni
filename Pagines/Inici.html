@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Pipperoni - Ristorante e Pizzeria</title>
+    <link rel="stylesheet" href="/Estils/estil.css" />
+    <link rel="icon" href="/Recursos/Imatges/Pipperoni_logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navOverlay">
+      <div class="navLinks">
+        <span class="botoX">&#x2715</span>
+        <a href="/Pagines/Inici.html">
+          <strong>INICI</strong>
+        </a>
+        <a href="/Pagines/Carta.html"> LA CARTA </a>
+        <a href="/Pagines/Reserves.html"> RESERVAR </a>
+      </div>
+    </div>
+    <div class="video-background">
+      <video autoplay loop muted playsinline>
+        <source src="/Recursos/Videos/pizzaVideo.webm" />
+      </video>
+    </div>
+    <header class="headerInici">
+      <a class="linkLogo" href="/Pagines/Inici.html">
+        <img
+          class="logo"
+          src="/Recursos/Imatges/Pipperoni_logo.svg"
+          alt="Logo"
+        />
+      </a>
+      <h1 class="titolInici">"LA MIGLIORE PIZZA PER TUTTI"</h1>
+      <nav class="navegador">
+        <!--Al final he decidit fer un inline SVG per fer el hamburger menu ja que l'anterior em presentava problemes.-->
+        <div class="navHamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="botoTornar">&#x21B5</span>
+      </nav>
+    </header>
+    <main class="mainInici">
+      <nav class="index">
+        <a href="#sobreNosaltres">SOBRE NOSALTRES</a>
+        <a href="#galeria">GALERIA</a>
+        <a href="#horari">HORARI</a>
+        <a href="#contacte">CONTACTE</a>
+        <a href="#ubicacio">UBICACIO</a>
+      </nav>
+      <article id="sobreNosaltres" class="sobreNosaltres">
+        <h2>SOBRE NOSALTRES</h2>
+        <section class="laMassa">
+          <h3>LA MASSA</h3>
+          <p>
+            La nostra massa és el cor de cada pizza que servim. Utilitzem
+            farines
+            <a href="https://www.mulinocaputo.it/es/" target="_blank">Caputo</a>
+            de la més alta qualitat i llevats naturals, fermentats lentament per
+            aconseguir una textura lleugera i una crosta cruixent que es fon a
+            la boca. Cada bola de massa és treballada a mà, seguint les
+            tècniques tradicionals italianes que ens han transmès generacions de
+            mestres pizzers. El respecte pel producte i el temps dedicat a la
+            fermentació són el que fa que cada pizza sigui una experiència
+            gastronòmica única.
+          </p>
+        </section>
+        <section class="elsIngredients">
+          <h3>ELS INGREDIENTS</h3>
+          <p>
+            Tots els nostres ingredients són de proximitat i de temporada,
+            seleccionats amb cura per la seva frescor i qualitat superior. Els
+            tomàquets, les verdures i els formatges provenen de productors
+            locals de confiança, mentre que els embotits i especialitats
+            importades d’Itàlia completen el nostre assortiment amb
+            autenticitat. La combinació de productes de proximitat i
+            tradicionals garanteix sabors intensos i equilibrats, respectant la
+            filosofia slow food que ens inspira.
+          </p>
+        </section>
+        <section class="elRestaurant">
+          <h3>EL RESTAURANT</h3>
+          <p>
+            Pipperoni és molt més que un restaurant; és un espai amb història i
+            caràcter. Fundat amb passió per la cuina italiana, cada racó
+            reflecteix l’amor pel detall i la tradició. Els nostres clients
+            gaudeixen d’una atmosfera acollidora i elegant, on cada visita es
+            converteix en un record inoblidable. Amb més de dècades
+            d’experiència i un compromís amb l’excel·lència, el nostre
+            restaurant continua sent referent per als amants de la pizza
+            artesanal i la cuina italiana de qualitat.
+          </p>
+        </section>
+      </article>
+      <div id="galeria" class="galeria">
+        <!--Aquestes imatges seran clicables i es veura la imatge "pizzaXbig" centrada a la pantalla-->
+        <img src="/Recursos/Imatges/pizza1.avif" alt="margherita" />
+        <img src="/Recursos/Imatges/pizza2.avif" alt="cappriciosa" />
+        <img src="/Recursos/Imatges/pizza3.avif" alt="prosciuttoEFunghi" />
+        <img src="/Recursos/Imatges/pizza4.avif" alt="diavola" />
+        <img src="/Recursos/Imatges/pizza5.avif" alt="napoli" />
+        <img src="/Recursos/Imatges/pizza6.avif" alt="budfalina" />
+        <img src="/Recursos/Imatges/pizza7.avif" alt="iberica" />
+        <img src="/Recursos/Imatges/pizza8.avif" alt="vegetariana" />
+      </div>
+      <article>
+        <h2 id="titolArticle2">HORARI - UBICACIÓ - CONTACTE</h2>
+        <div class="horariContacteUbicacio">
+          <section id="horari" class="horari">
+            <h3>HORARI</h3>
+            <ul>
+              <li>
+                <span>Dilluns:</span>
+                <span>Tancat</span>
+              </li>
+              <li>
+                <span>Dimarts:</span>
+                <span>12:00-16:00 || 20:00-23:00</span>
+              </li>
+              <li>
+                <span>Dimecres:</span>
+                <span>12:00-16:00 || 20:00-23:00</span>
+              </li>
+              <li>
+                <span>Dijous:</span>
+                <span>12:00-16:00 || 20:00-23:00</span>
+              </li>
+              <li>
+                <span>Divendres:</span>
+                <span>12:00-16:00 || 20:00-24:00</span>
+              </li>
+              <li>
+                <span>Dissabte:</span>
+                <span>12:00-17:00 || 20:00-24:00</span>
+              </li>
+              <li>
+                <span>Diumenge:</span>
+                <span>12:00-17:00 || 20:00-24:00</span>
+              </li>
+            </ul>
+          </section>
+          <section class="ubicacio" id="ubicacio">
+            <h3>VISITA'NS!</h3>
+            <p>Carrer del Cargol, 1, L'Escala</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d311.03847418368076!2d3.133021410033789!3d42.126456961812664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba5f59009b906b%3A0x8475aa06ccdff171!2sCasa%20del%20Gavi%C3%A0!5e0!3m2!1ses!2ses!4v1762812886755!5m2!1ses!2ses"
+            ></iframe>
+          </section>
+          <section id="contacte" class="contacte">
+            <h3>CONTACTE</h3>
+            <ul>
+              <li>
+                <span>Telefon:</span>
+                <span>+34634934943</span>
+              </li>
+              <li>
+                <span>Correu electronic:</span>
+                <span>pipperoni@gmail.com</span>
+              </li>
+              <li>
+                <span>Instagram:</span>
+                <span>@pipperoni</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="footerInici">
+      <p>© 2025 Pipperoni. Tots els drets reservats</p>
+    </footer>
+    <div id="lightbox" class="lightbox"></div>
+    <script src="/Scripts/script.js"></script>
+  </body>
+</html>
+
