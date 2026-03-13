@@ -164,7 +164,7 @@ header img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 2px, solid, white;
+  border: 2px solid white;
   border-radius: 5px;
   margin-top: 15rem;
 }
@@ -588,10 +588,6 @@ iframe {
   align-self: center;
   width: 60%;
 }
-.botoEnviar:hover {
-  background-color: #5a7d4f;
-  transform: scale(1.05);
-}
 .fondoReserva,
 .fondoCarta {
   position: fixed;
@@ -645,3 +641,16 @@ iframe {
   height: auto;
   max-width: 1000px;
 }
+
+/*Pàgina gràcies*/
+.graciesOverlay{
+  color:white;
+}
+.graciesOverlay h1{
+  text-decoration: underline;
+  padding: 2rem;
+}
+.graciesOverlay p{
+  font-size: 1.5rem;
+}
+
